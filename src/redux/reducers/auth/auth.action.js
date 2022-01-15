@@ -52,7 +52,7 @@ export const signOut = () => async (dispatch) => {
     try {
         localStorage.removeItem("zomatoUser");
         clearUser();
-        window.location.href = "http://localhost:5000/delivery";
+        window.location.href = "http://localhost:4000/delivery";
 
         return dispatch({ type: SIGN_OUT, payload: {} });
     } catch (error) {
